@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/subarray-sum-equals-k/
+
 function subarraySum(arr: number[], k: number): number {
     let mpp = new Map(), count = 0, preSum = 0;
     mpp.set(0, 1);
