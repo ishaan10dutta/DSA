@@ -6,6 +6,7 @@ function searchRange(nums: number[], target: number): number[] {
   
     if (minIndex !== -1) {
       let maxIndex = binarySearchIndices(nums, target, true);
+      let count = maxIndex - minIndex + 1;
       return [minIndex, maxIndex];
     }
   

@@ -25,7 +25,7 @@ function highFiveScores(scores: number[][]): number[][] {
   }, {} as Record<number, number[]>);
 
   const resTopFive = Object.entries(scoresByIdMap).map(([id, scores]) => {
-    scores.sort((a, b) => a - b);
+    scores.sort((a, b) => b - a);
     const topFive = scores.slice(0, 5);
     const average = Math.floor(
       topFive.reduce((acc, curr) => acc + curr, 0) / 5
